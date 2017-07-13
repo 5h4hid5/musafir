@@ -8,13 +8,18 @@
 }
 
 body {
-  background: #060407;
+
 }
 
 p {
   font-size: 18px;
 }
-
+/*
+=cominSoon
+*/
+.coming-soon {
+  background: #060407;
+}
 .coming-soon {
   font-family: 'Noto Sans Bengali', sans-serif;
   height: 100vh;
@@ -75,3 +80,6 @@ p {
     margin-top: 50px;
   }
 }
+/*
+=cominSoonEnd
+*/
