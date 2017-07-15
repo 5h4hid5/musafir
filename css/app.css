@@ -83,3 +83,34 @@ p {
 /*
 =cominSoonEnd
 */
+
+.mdl-layout__drawer {
+  background: #060407;
+  display: flex;
+  border-color: #111;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.mdl-layout__drawer .mdl-layout-title {
+  padding-left: 0;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+  color: #FFF;
+}
+
+.blog-post .mdl-card__title {
+  padding: 0;
+}
+
+.blog-post .mdl-card__title-text {
+  display: inline-block;
+  width: 100%;
+  min-height: 70px;
+  padding: 16px;
+  background: #fff;
+  color: #342E37;
+}
