@@ -156,3 +156,60 @@ h1, h2, h3, h4 {
   color: #342E37;
   font-size: 20px;
 }
+
+.mdl-grid {
+
+}
+
+.main {
+  background: url(../img/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(6,4,7,0.9);
+}
+
+.main-post {
+  margin: 5%;
+}
+
+.main-post .mdl-card__title {
+  padding: 0;
+}
+
+.main-post .mdl-card__title-text {
+  display: inline-block;
+  width: 100%;
+  padding: 16px 5%;
+  text-align: center;
+  background: rgba(6,4,7,0.9);
+}
+
+.main-post .post-meta {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.main-post .post-meta li {
+  display: inline-block;
+}
+
+.main-post .post-meta li a {
+  text-decoration: none;
+}
+
+
+.main-post .mdl-card__supporting-text {
+  margin: 0 auto;
+  padding-right: 16px;
+  color: #060407;
+}
+
+
+.main-post .mdl-card__supporting-text p {
+  text-align: justify;
+  width: 100%;
+}
