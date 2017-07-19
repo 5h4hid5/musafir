@@ -211,6 +211,24 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 
+.post-nav {
+  padding: 0 !important;
+}
+
+.nav-btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 16px 0;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.nav-btn .fa {
+  margin: 8px;
+}
+
 @media (min-width: 768px) {
   .main-post {
     margin: 5%;
