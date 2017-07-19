@@ -169,9 +169,6 @@ h1, h2, h3, h4 {
   background-color: rgba(6,4,7,0.9);
 }
 
-.main-post {
-  margin: 5%;
-}
 
 .main-post .mdl-card__title {
   padding: 0;
@@ -212,4 +209,10 @@ h1, h2, h3, h4 {
 .main-post .mdl-card__supporting-text p {
   text-align: justify;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-post {
+    margin: 5%;
+  }
 }
