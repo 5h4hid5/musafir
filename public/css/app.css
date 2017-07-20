@@ -1,0 +1,170 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosansbengali.css);
+@import url('https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/charukola-reguler-unicode/stylesheet.css');
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+
+body {
+  font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+.devider {
+  margin: 0 auto;
+  width: 150px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.mdl-layout__drawer {
+  background: #060407;
+  display: flex;
+  border-color: #111;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.mdl-layout__drawer .mdl-layout-title {
+  padding-left: 0;
+}
+
+.mdl-layout__drawer .mdl-navigation {
+  margin-bottom: 10px;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+  color: #FFF;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition: all ease-in-out 0.3s;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+  background: none;
+  color: #FF3D43;
+}
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.social li {
+  display: inline-block;
+}
+
+.social li a {
+  color: #FFF;
+  padding: 4px 6px;
+  margin-right: 4px;
+}
+
+.blog-post .mdl-card__title {
+  padding: 0;
+}
+
+.blog-post .mdl-card__title-text {
+  display: inline-block;
+  width: 100%;
+  min-height: 70px;
+  padding: 16px;
+  background: #fff;
+  color: #342E37;
+  font-size: 20px;
+}
+
+.mdl-layout {
+  background: url(../img/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(6,4,7,0.9);
+  min-height: 100vh;
+}
+
+
+.main-post .mdl-card__title {
+  padding: 0;
+}
+
+.main-post .mdl-card__title-text {
+  display: inline-block;
+  width: 100%;
+  padding: 16px 5%;
+  text-align: center;
+  background: rgba(6,4,7,0.9);
+}
+
+.main-post .post-meta {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.main-post .post-meta li {
+  display: inline-block;
+}
+
+.main-post .post-meta li a {
+  text-decoration: none;
+}
+
+
+.main-post .mdl-card__supporting-text {
+  margin: 0 auto;
+  padding-right: 16px;
+  color: #060407;
+}
+
+
+.main-post .mdl-card__supporting-text p {
+  text-align: justify;
+  width: 100%;
+}
+
+.post-nav {
+  padding: 0 !important;
+}
+
+.nav-btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 16px 0;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.nav-btn .fa {
+  margin: 8px;
+}
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-post {
+    margin: 5%;
+  }
+}

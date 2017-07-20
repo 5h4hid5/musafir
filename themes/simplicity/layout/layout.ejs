@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Header -->
+  <%- partial('_partial/head') %>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+      <!-- Main Menu -->
+      <%- partial('_partial/menu') %>
+
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <div class="mdl-grid main">
+            <%- body %>
+          </div>
+        </div>
+      </main>
+
+    </div>
+    <!-- After footer scripts -->
+    <%- partial('_partial/after-footer') %>
+</body>
+</html>
