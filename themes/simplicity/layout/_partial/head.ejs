@@ -3,16 +3,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="<% if (page.post_ex) { %> <%= page.post_ex %> <% } else { %> ভালো মানুষ নয়, সৎ মানুষ হওয়ার চেষ্টা করুন। <% } %>">
+  <meta name="author" content="শহীদ">
+
+
+  <meta property="og:title" content="<%= config.title %> <% if(page.title) { %> | <%= page.title %> <% } else if (page.archive) { %> | সংগ্রহশালা <% } else if (page.category) { %> | <%= page.category %> <% } else { %> | নীড়পাতা <% } %>" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="<%- config.root %>" />
+  <meta property="og:image" content="<%= page.img_url %>" />
+  <meta property="og:description" content="<% if (page.post_ex) { %> <%= page.post_ex %> <% } else { %> ভালো মানুষ নয়, সৎ মানুষ হওয়ার চেষ্টা করুন। <% } %>" />
+
+
   <link rel="icon" href="favicon/favicon.ico">
 
   <%- css('css/material.min.css') %>
-  <%- css('css/rrssb.css') %>
   <%- css('css/app.css') %>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+  <title><%= config.title %> <% if(page.title) { %> | <%= page.title %> <% } else if (page.archive) { %> | সংগ্রহশালা <% } else if (page.category) { %> | <%= page.category %> <% } else { %> | নীড়পাতা <% } %> </title>
 
-  <title>মুসাফির শহীদ | নীড়পাতা</title>
+  <!-- Google Analytics -->
+  <%- partial('google-analytic') %>
+  <%- partial('share-this') %>
 
 </head>

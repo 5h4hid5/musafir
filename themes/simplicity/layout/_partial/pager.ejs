@@ -1,0 +1,10 @@
+<% if (page.prev){ %>
+<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+    <a href="<%- config.root %><%- page.prev.path %>" class="nav-btn"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> <span class="hidden-xs">পূর্ববর্তী লেখা</span></a>
+</div>
+<% } %>
+<% if (page.next){ %>
+<div class=" <% if (!page.prev) { %> mdl-cell--6-offset mdl-cell--4-offset-tablet mdl-cell--2-offset-phone <% } %> mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+    <a href="<%- config.root %><%- page.next.path %>" class="nav-btn"><span class="hidden-xs">পরবর্তী লেখা </span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+</div>
+<% } %>

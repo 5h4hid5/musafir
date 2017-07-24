@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosansbengali.css);
-@import url('https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/charukola-reguler-unicode/stylesheet.css');
+@import url('https://fonts.googleapis.com/css?family=Galada');
 .flex {
   display: flex;
   flex-direction: column;
@@ -14,10 +14,26 @@ body {
 
 p {
   font-size: 18px;
+  line-height: 1.5em;
 }
 
-h1, h2, h3, h4 {
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .mdl-button {
   font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+.source {
+  border-top: 1px solid rgba(162,215,41,0.9);
+  margin-top: 40px;
+}
+
+.source h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
 }
 
 .devider {
@@ -57,6 +73,10 @@ h1, h2, h3, h4 {
   color: #FF3D43;
 }
 
+.mdl-layout__drawer-button {
+  color: #FF3D43;
+}
+
 .social {
   list-style: none;
   margin: 0;
@@ -74,6 +94,19 @@ h1, h2, h3, h4 {
   margin-right: 4px;
 }
 
+.rrssb-buttons li a {
+  border-radius: 0;
+}
+
+.mdl-card__media {
+  background-color: #060407;
+}
+
+.mdl-card__media img {
+  width: 100%;
+  height: auto;
+}
+
 .blog-post .mdl-card__title {
   padding: 0;
 }
@@ -86,6 +119,11 @@ h1, h2, h3, h4 {
   background: #fff;
   color: #342E37;
   font-size: 20px;
+}
+
+.read-more {
+  text-align: right;
+  font-size: 18px;
 }
 
 .mdl-layout {
@@ -107,7 +145,8 @@ h1, h2, h3, h4 {
   width: 100%;
   padding: 16px 5%;
   text-align: center;
-  background: rgba(6,4,7,0.9);
+  background: rgba(6,4,7,1);
+  color: #FFF;
 }
 
 .main-post .post-meta {
@@ -155,6 +194,41 @@ h1, h2, h3, h4 {
 
 .nav-btn .fa {
   margin: 8px;
+}
+
+blockquote {
+  font-family: 'Galada', cursive;
+  padding: 16px;
+  background: #F1F1F1;
+  margin: 32px 16px;
+  font-style: normal;
+  position: relative;
+  color: rgba(6,4,7,.9);
+}
+
+blockquote p {
+  text-align: center !important;
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+blockquote::before, blockquote::after {
+  font-family: 'FontAwesome';
+  margin: 0;
+  position: absolute;
+  color: #ff4081;
+  content: "";
+  font-size: 32px;
+}
+
+blockquote::before {
+  content: '\f10d';
+  top: -16px;
+}
+blockquote::after {
+  content: '\f10e';
+  right: -16px;
+  bottom: -16px;
 }
 
 @media (max-width: 767px) {

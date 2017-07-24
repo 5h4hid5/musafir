@@ -1,4 +1,21 @@
+<% if (theme.disqus_shortname){ %>
+    <script type="text/javascript">
+        var disqus_config = function () {
+        this.page.url = '<%= page.permalink %>' ;
+        this.page.identifier = '<%= url_for(page.path) %>';
+        };
+        var disqus_shortname = '<%= theme.disqus_shortname %>';
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+<% } %>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <%- js('js/material.min.js') %>
-<%- js('js/rrssb.min.js') %>
 <%- js('js/app.js') %>

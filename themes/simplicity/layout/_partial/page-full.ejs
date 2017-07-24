@@ -1,0 +1,43 @@
+<div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone main-post mdl-card mdl-shadow--3dp">
+  <% if (item.img_url) { %>
+  <div class="mdl-card__media">
+    <img src=" <%= item.img_url %>" alt="" style="max-width: 100%"/>
+  </div>
+  <% } %>
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">
+      <%- item.title || item.link %>
+    </h2>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <div class="mdl-card__supporting-text">
+      <%- item.content %>
+    </div>
+  </div>
+
+  <div class="mdl-card__actions mdl-card--border">
+    <div class="mdl-card__supporting-text">
+      <%- partial('social-share') %>
+    </div>
+  </div>
+
+  <div class="mdl-card__actions mdl-card--border">
+    <div class="mdl-card__supporting-text post-nav">
+
+      <div class="mdl-grid">
+
+        <%- partial('pager') %>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="mdl-card__actions mdl-card--border">
+    <div class="mdl-card__supporting-text">
+
+      <%- partial('comments') %>
+
+    </div>
+  </div>
+</div>
