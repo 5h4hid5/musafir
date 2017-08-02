@@ -1,9 +1,12 @@
 # Header
 menu:
   নীড়পাতা: /
-  অনুবাদ: /categories/অনুবাদ/
-  অনুগল্প: /
-  টিপ্স & ট্রিক্স: /
+  অনুপ্রেরণা: /categories/অনুপ্রেরণা/
+  অনুগল্প: /categories/অনুগল্প/
+  টিপ্স & ট্রিক্স: /categories/টিপ্স-ট্রিক্স/
   ইসলামিক রিসোর্স: /islamic-resources/
 disqus_shortname: shahids
 google_analytics: UA-100375315-1
+
+language:
+  - bn-BD
