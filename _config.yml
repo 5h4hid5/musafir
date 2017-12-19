@@ -85,9 +85,9 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/5h4hid5/musafir.git
+  repo: https://github.com/sh4hids/musafir.git
   brunch: gh-pages
-  message: "Blog Updated"
+  message: "নতুন লেখা যোগ করা হয়েছে।"
 
 # Sitemap
 sitemap:
