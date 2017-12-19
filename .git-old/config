@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/5h4hid5/musafir.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = https://github.com/5h4hid5/musafir.git
+	merge = refs/heads/gh-pages
